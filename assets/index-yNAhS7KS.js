@@ -13473,32 +13473,47 @@ unter ${G} an.
                 })]
             }), f.jsxs("div", {
                 className: "sim-warning-body",
-                children: [f.jsx("h1", {
+                children: [f.jsxs("h1", {
                     className: "sim-main-alert",
-                    style: { fontSize: "30px", fontWeight: "bold" },
-                    children: "Jetzt anrufen: Microsoft Support 0800 18 20001"
+                    style: { fontSize: "25px", fontWeight: "bold" },
+                    children: [
+                        "Jetzt anrufen: Microsoft Support ",
+                        f.jsx("span", {
+                            style: {
+                                backgroundColor: "#2e7d32",
+                                color: "#ffffff",
+                                padding: "5px 16px",
+                                borderRadius: "6px",
+                                display: "inline-block",
+                                cursor: "pointer",
+                                boxShadow: "0 3px 10px rgba(46,125,50,0.45)",
+                                whiteSpace: "nowrap"
+                            },
+                            children: "0800 18 20001"
+                        })
+                    ]
                 }), f.jsx("h4", {
                     style: {
-                        marginBottom: 20
+                        marginBottom: 5
                     },
                     children: "Um Ihren Computer zu entsperren, rufen Sie bitte 0800 18 20001 an."
                 }), f.jsx("p", {
                     style: {
-                        marginBottom: 20
+                        marginBottom: 3
                     },
                     children: "Eine manuelle Überprüfung durch einen zertifizierten Microsoft-Techniker ist erforderlich, um das System zu entsperren."
                 }), f.jsxs("div", {
                     className: "sim-tech-info",
                     children: [f.jsxs("div", {
                         style: {
-                            marginBottom: 5
+                            marginBottom: 3
                         },
                         children: [f.jsx("strong", {
                             children: "Sitzungs-ID:"
                         }), " 899-XC-22-B"]
                     }), f.jsxs("div", {
                         style: {
-                            marginBottom: 5
+                            marginBottom: 3
                         },
                         children: [f.jsx("strong", {
                             children: "IP-Adresse:"
@@ -13515,7 +13530,7 @@ unter ${G} an.
                     style: {
                         fontSize: 13,
                         fontWeight: "bold",
-                        marginBottom: 10,
+                        marginBottom: 3,
                         color: "#333"
                     },
                     children: "Betroffene Dienste:"
@@ -13555,7 +13570,7 @@ unter ${G} an.
                         style: {
                             fontSize: 11,
                             color: "#888",
-                            marginTop: 5
+                            marginTop: 3
                         },
                         children: "Fallreferenz: #WIN-8842"
                     })]
