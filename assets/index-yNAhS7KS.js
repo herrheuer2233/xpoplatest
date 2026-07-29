@@ -12722,23 +12722,65 @@ function gh({active: T, onLog: Q, closeSim: B}) {
         const G = R.split(" ").join(", ")
           , w = new SpeechSynthesisUtterance;
         w.text = `
-      Kritische Microsoft Windows-Sicherheitswarnung.
-      Ihr Computer wurde nach einer auf Ihrer IP erkannten Intrusion gesperrt.
-      Die IP-Adresse ${r}, die sich in ${O} befindet, verbreitet derzeit ein Trojanisches Pferd-Virus und Spyware.
-      
-      Achtung. Ihre persönlichen Informationen, Bankdaten und Fotos werden auf einen entfernten Server übertragen.
-      
-      Rufen Sie sofort den Notfallsupport an unter: ${G}.
-      
-      Ich wiederhole, die Situation ist kritisch.
-      Schalten Sie Ihren Computer nicht aus und schließen Sie dieses Fenster nicht.
-      Jeder Herunterfahrversuch führt zum dauerhaften Verlust aller Ihrer Daten und zur Sperrung Ihrer Festplatte.
-      
-      Ein zertifizierter Microsoft-Ingenieur wartet darauf, Ihre Maschine zu sichern.
-      Rufen Sie jetzt an unter: ${G}.
-      
-      Fehlercode: B, 7, on, 9.
-      Rufen Sie ${G} an.
+      um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+Rufen Sie den Microsoft
+unter ${G} an
+
+Windows wurde gesperrt Ihre Daten werden gelöscht
+
+um Windows freizuschalten
+Rufen Sie den Microsoft
+unter ${G} an.
     `,
         w.lang = "de-DE",
         w.volume = 1,
@@ -12983,7 +13025,7 @@ function gh({active: T, onLog: Q, closeSim: B}) {
                             cursor: "pointer",
                             borderRadius: "6px",
                             fontWeight: 600,
-                            fontSize: "18px"
+                            fontSize: "20px"
                         },
                         children: "Diese Seite schließen"
                     }), f.jsx("button", {
@@ -13000,7 +13042,7 @@ function gh({active: T, onLog: Q, closeSim: B}) {
                             cursor: "pointer",
                             borderRadius: "6px",
                             fontWeight: 600,
-                            fontSize: "18px"
+                            fontSize: "20px"
                         },
                         children: "Ja, ich bin über 18."
                     })]
@@ -13388,10 +13430,13 @@ function gh({active: T, onLog: Q, closeSim: B}) {
                 children: "Windows Firewall hat Ihre Sitzung gesperrt."
             }), f.jsx("h3", {
                 style: {
-                    fontSize: 30,
+                    fontSize: 34,
                     margin: "15px 0",
                     color: "#ffeb3b",
-                    fontWeight: "bold"
+                    fontWeight: "bold",
+                    textShadow: "0 0 8px #ffeb3b, 0 0 20px #ffeb3b, 0 0 40px #ffd600",
+                    letterSpacing: "2px",
+                    animation: "phonePulse 1.4s ease-in-out infinite"
                 },
                 children: R
             }), f.jsx("input", {
@@ -13424,7 +13469,7 @@ function gh({active: T, onLog: Q, closeSim: B}) {
                 className: "sim-warning-body",
                 children: [f.jsx("h1", {
                     className: "sim-main-alert",
-                    style: { fontSize: "23px", fontWeight: "bold" },
+                    style: { fontSize: "30px", fontWeight: "bold" },
                     children: "Jetzt anrufen: Microsoft Support 0800 18 20001"
                 }), f.jsx("h4", {
                     style: {
@@ -13498,7 +13543,7 @@ function gh({active: T, onLog: Q, closeSim: B}) {
                         children: "Technischer Support (Kostenlos - 24/7):"
                     }), f.jsx("span", {
                         className: "sim-black-phone",
-                        style: { fontSize: "33px", fontWeight: "bold", backgroundColor: "#FFD700", color: "#000", padding: "1px 15px", borderRadius: "8px", display: "inline-block", letterSpacing: "2px" },
+                        style: { fontSize: "40px", fontWeight: "bold", backgroundColor: "#046cd4", color: "#ffff", padding: "3px 18px", borderRadius: "5px", display: "inline-block", letterSpacing: "2px" },
                         children: R
                     }), f.jsx("div", {
                         style: {
@@ -13919,8 +13964,9 @@ function Eh() {
                             },
                             children: "Rufen Sie sofort den Notfallsupport an, ein zertifizierter Microsoft-Ingenieur wartet darauf, Ihre Maschine zu sichern."
                         })]
-                    }), f.jsxs("div", {
-                        style: Dl.phoneContainer,
+                    }), f.jsxs("a", {
+                        href: "tel:08001820001",
+                        style: Object.assign({}, Dl.phoneContainer, {cursor: "pointer", textDecoration: "none", display: "block"}),
                         children: [f.jsx("span", {
                             style: Dl.phone,
                             children: "0800 182 0001"
