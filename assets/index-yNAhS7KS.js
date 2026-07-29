@@ -13436,7 +13436,7 @@ unter ${G} an.
                     fontWeight: "bold",
                     letterSpacing: "2px",
                     backgroundColor: "#d32f2f",
-                    padding: "14px 32px",
+                    padding: "8px 32px",
                     borderRadius: "8px",
                     display: "inline-block",
                     cursor: "pointer",
